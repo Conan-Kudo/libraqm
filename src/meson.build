@@ -43,6 +43,7 @@ libraqm = library(
   'raqm.c',
   'raqm.h',
   version : meson.project_version(),
+  soversion : raqm_version[0],
   dependencies : deps,
   c_args : ['-DHAVE_CONFIG_H'],
   install : true,
